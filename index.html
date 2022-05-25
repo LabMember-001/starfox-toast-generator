@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0">
+	<title>Starfox Toast Generator</title>
+	<script type="text/javascript" src="starfoxgen.js"></script>
+	<script type="text/javascript" src="demo.js"></script>
+	<style>
+		body {
+			background-color: #222;
+			color: #eee;
+		}
+	</style>
+</head>
+<body>
+
+<center><h1>Starfox Toast Generator</h1></center>
+
+<select id="sfgen-characterselect">
+	<option value="james">James</option>
+	<option value="rob">Rob</option>
+	<option value="bill">Bill</option>
+	<option value="kat">Kat</option>
+	<option value="wolf">Wolf</option>
+	<option value="andrew">Andrew</option>
+	<option value="leon">Leon</option>
+	<option value="pigma">Pigma</option>
+	<option value="andross">Andross</option>
+	<option value="fox">Fox</option>
+	<option value="falco">Falco</option>
+	<option value="peppy">Peppy</option>
+	<option value="slippy">Slippy</option>
+	<option value="general_pepper">General Pepper</option>
+</select>
+<br>
+<textarea id="sfgen-textselect"></textarea>
+
+<script>
+
+</script>
+<br>
+<button id="sfgen-demo-gen">Generate</button>
+
+<p>Activation of module: <code>sfgen.<span style="color:#7b7bff;">startup</span>();</code></p>
+<p>Call notification toast:<code>sfgen.<span style="color:#7b7bff;">queue</span>(<span style="color:#68cc5a;">"slippy"</span>, <span style="color:#68cc5a;">"Enemy shield analyzed!"</span>);</code></p>
+<p>Included are some tilesets for some characters sharing the same spritesheet. The characters included in the demo are preconfigured.<br>
+		Some additional configurations include scaling up or down the size with <code>sfgen.image_scale</code>, the ability to change the speed of the typewriter text effect with <code>sfgen.text_speed</code>, and the ability to disable the automatic closing of notifications to require a mouseclick instead with <code>sfgen.auto_close</code>.
+</p>
+
+</body>
+</html>
