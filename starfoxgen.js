@@ -81,7 +81,7 @@ const sfgen = {
 			y: [-176, -176],			
 		},
 		general_pepper: {
-			name: "General Pepper",
+			name: "Pepper",
 			x: [-88, -132],
 			y: [-220, -220],			
 		},
@@ -317,10 +317,17 @@ const sfgen = {
 
 		document.getElementById(_id).getElementsByClassName("toaster-text")[0].innerHTML = '';
 
+		for (var i = 0; i < _text.length+1; i++) {
+			var _letter = document.createElement('span');
+			_letter.textContent = _text[i];
+			_letter.setAttribute('style', 'opacity: 0');
+			document.getElementById(_id).getElementsByClassName("toaster-text")[0].appendChild(_letter);
+		}
+
 		function integerTimeout(i, last = false) {
 			setTimeout(function() {
 				if (document.getElementById(_id)) {
-					document.getElementById(_id).getElementsByClassName("toaster-text")[0].innerHTML = _text.substring(0, i);
+					document.getElementById(_id).getElementsByClassName("toaster-text")[0].querySelectorAll('span')[i].setAttribute('style', '');
 					if (last == true) {
 						setTimeout(function(){
 							if (document.getElementById(_id)) {

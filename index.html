@@ -1,20 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0">
-	<title>Starfox Toast Generator</title>
-	<script type="text/javascript" src="starfoxgen.js"></script>
-	<script type="text/javascript" src="demo.js"></script>
+	<meta charset="UTF-8">
+	<title>「 Starfox Toast Generator 」</title>
 	<style>
 		body {
-			background-color: #222;
+			background: #222;
+			color: #eee;
+		}
+
+		a, a:visited {
+			color: #ccc;
+		}
+
+		code {
+			background: #000;
 			color: #eee;
 		}
 	</style>
 </head>
 <body>
+<div class="main">
 
-<center><h1>Starfox Toast Generator</h1></center>
+<h1>「 Starfox Toast Generator 」</h1>
 
 <select id="sfgen-characterselect">
 	<option value="james">James</option>
@@ -42,10 +50,28 @@
 <button id="sfgen-demo-gen">Generate</button>
 
 <p>Activation of module: <code>sfgen.<span style="color:#7b7bff;">startup</span>();</code></p>
-<p>Call notification toast:<code>sfgen.<span style="color:#7b7bff;">queue</span>(<span style="color:#68cc5a;">"slippy"</span>, <span style="color:#68cc5a;">"Enemy shield analyzed!"</span>);</code></p>
+<p>Call notification toast: <code>sfgen.<span style="color:#7b7bff;">queue</span>(<span style="color:#68cc5a;">"slippy"</span>, <span style="color:#68cc5a;">"Enemy shield analyzed!"</span>);</code></p>
 <p>Included are some tilesets for some characters sharing the same spritesheet. The characters included in the demo are preconfigured.<br>
 		Some additional configurations include scaling up or down the size with <code>sfgen.image_scale</code>, the ability to change the speed of the typewriter text effect with <code>sfgen.text_speed</code>, and the ability to disable the automatic closing of notifications to require a mouseclick instead with <code>sfgen.auto_close</code>.
 </p>
 
+<script type="text/javascript" src="starfoxgen.js"></script>
+<script type="text/javascript" src="demo.js"></script>
+
+</div>
+
+<hr>
+
+<div class="main">
+
+<div class="main">
+
+	<p>
+		<a class="external" href="https://github.com/LabMember-001/starfox-toast-generator" rel="nofollow noopener noreferrer" target="_blank">GitHub</a>
+	</p>
+
+</div>
+
+</div>
 </body>
 </html>
